@@ -29,3 +29,11 @@ while(i < favoriteFoods.length){
 for(let i = 0; i < favoriteFoods.length; i++) {
     console.log(favoriteFoods[i])
 }
+
+//Independent practice
+let cousins = ['Luca', 'Hazel', 'Isidora', 'Cecilia']
+
+for(let i = 0; i < cousins.length; i++) {
+    console.log(`${cousins[i]} is one of the four best kids ever!`)
+}
+
