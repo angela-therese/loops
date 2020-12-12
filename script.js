@@ -97,3 +97,36 @@ for(i = 0; i < weatherForecast.length; i++){
         console.log(`${weatherForecast[i].day} will be hot as heck!`)
     }
 }
+
+//In your JavaScript file, copy and paste the following array:
+// var cohortOneStudents = [Sable, David, Joey, Nick, Tommy, Connor, Charles, Russ, Bobby, Josh, Nikki, Matt, Dale, Sydney]
+// Use a for loop to print each student's name to the console.
+
+cohortOneStudents = ['Sable', 'David', 'Joey', 'Nick', 'Tommy', 'Connor', 'Charles', 'Russ', 'Bobby', 'Josh', 'Nikki', 'Matt', 'Dale', 'Sydney']
+
+for (i = 0; i < cohortOneStudents.length; i++){
+    console.log(cohortOneStudents[i])
+}
+
+// In your JavaScript file, create an array of 5 of your interests.
+// Loop through the interests and console log the phrase "One of my interests is: [your interest]." for each of the interests in your array.
+
+let interests = ['hula hoops', 'Malta', 'Italian', 'coding', 'writing']
+
+for(i = 0; i < interests.length; i++) {
+    console.log(`One of my interests is: ${interests[i]}`)
+}
+
+//Refactor your loop from the previous exercise. Pick one of your interests as your absolute favorite interest. Add a conditional to your loop to check if each interest in the array is your favorite. When the loop gets to your favorite interest, it should print "My absolute favorite interest is:" followed by the name of your interest. Any other interests can be printed the same way that they were in the previous exercise.
+
+let favorite = 'Malta'
+
+for(i = 0; i < interests.length; i++) {
+    if(interests[i] === favorite)   {
+        console.log(`My favorite interest is ${favorite}.`)
+    } else {
+         console.log(`One of my interests is ${interests[i]}`)
+    }
+
+    }
+
