@@ -183,3 +183,72 @@ for(i = 2; i < 9; i += 2) {
 console.log(`${n} who do we appreciate?`)
 
 
+ //Act 7 Pt 2
+
+ let partyGuestList = [
+    {
+      name: "Sam",
+      age: 18
+    },
+    {
+      name: "Jerry",
+      age: 45
+    },
+    {
+      name: "Lila",
+      age: 29
+    },
+    {
+      name: "Mary",
+      age: 68
+    },
+    {
+      name: "Todd",
+      age: 10
+    }
+  ]
+  
+  function ageChecker(peopleArray, cutoffAge){
+    let oldEnough = []
+
+    for(let i = 0; i < peopleArray.length; i++){
+
+      if(peopleArray[i].age >= cutoffAge){
+        oldEnough.push(peopleArray[i].name);
+        oldEnough2 = oldEnough.join(', ')
+
+      }
+    }
+    return oldEnough2
+  
+    
+  }
+  
+let drinkers = ageChecker(partyGuestList, 21)
+console.log(`These people can drink: ${drinkers}.`) 
+
+let joinGym = [
+    {
+      name: "Luca",
+      age: 12
+    },
+    {
+      name: "Hazel",
+      age: 12
+    },
+    {
+      name: "Angie",
+      age: 41
+    },
+    {
+      name: "Izzi",
+      age: 2
+    },
+    {
+      name: "Janet",
+      age: 39
+    }
+  ]
+
+  let gymMembership = ageChecker(joinGym, 16)
+  console.log(`These people can join the gym: ${gymMembership}.`)
